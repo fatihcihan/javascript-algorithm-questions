@@ -40,8 +40,19 @@ let newArr = arr.some(number => number > 6);
 console.log(newArr);        // true */
 
 
+/* // every -> checks whether all elements in an array satisfy the condition
+// let newArr = arr.every(a => a > 0);     // true 
+let newArr = arr.every(a => a > 1);     // false 
+console.log(newArr);     */
 
 
+/* // findIndex -> returns the index of the first element that matches the rule
+let newArr = arr.findIndex(a => a > 1);
+console.log(newArr);    // 2 */
 
+
+/* // fill -> fills specified elements in an array with a value
+let newArr = arr.fill(1);
+console.log(newArr);    // [ 1, 1, 1, 1, 1, 1, 1 ] */
 
 
