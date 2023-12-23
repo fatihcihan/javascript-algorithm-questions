@@ -22,12 +22,22 @@ console.log(newArr); */
 let newArr = arr.concat(arr1);
 console.log(newArr);    // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] */
 
+
 /* // spread -> ... 
 arr.push(...arr1);
 console.log(arr);        // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10  */
 
 
+/* // entries -> returns values ​​with [key,value] pairs
+let newArr = arr.entries();
+for (let i of newArr) {
+    console.log(i);     // [0,1] [1,2] [2,3] ... -> [key,value]
+} */
 
+
+/* // some -> it returns true if it finds even a single element in an array that meets the given condition.
+let newArr = arr.some(number => number > 6);
+console.log(newArr);        // true */
 
 
 
