@@ -79,3 +79,24 @@ let newArr = arr.forEach(val => {
         console.log(val);   // [ 4, 5, 6, 7 ]
     }
 }) */
+
+
+/* // join -> returns an array as a string
+let newArr = arr.join();
+console.log(newArr);    // 1,2,3,4,5,6,7 */
+
+
+/* // length -> number of data in the array
+console.log(arr.length);    // 7 */
+
+
+/* // includes -> checks if the specified value exists in the array
+console.log(arr.includes(1));       // true
+console.log(arr.includes(0));       // false */
+
+
+/* // reverse -> reverses the array
+let newArr = arr.reverse();
+console.log(newArr);    // [ 7, 6, 5, 4, 3, 2, 1 ] */
+
+
