@@ -100,3 +100,13 @@ let newArr = arr.reverse();
 console.log(newArr);    // [ 7, 6, 5, 4, 3, 2, 1 ] */
 
 
+/* // sort -> for the sorting process
+let newArray = arr.sort((a, b) => a - b);
+console.log(newArray);  // [ 1, 2, 3, 4, 5, 6, 7 ]
+let newArray2 = arr.sort((a, b) => b - a);
+console.log(newArray2);  // [ 7, 6, 5, 4, 3, 2, 1] */
+
+
+/* // reduce -> returns a single value, the accumulated result of the function
+let newArr = arr.reduce((a, b) => a + b, 0);
+console.log(newArr);    // 28 */
