@@ -56,3 +56,26 @@ let newArr = arr.fill(1);
 console.log(newArr);    // [ 1, 1, 1, 1, 1, 1, 1 ] */
 
 
+// ----- 4 most used methods -----
+
+/* // 1) filter -> for filtering operations
+let newArr = arr.filter(val => val > 2);
+console.log(newArr);    // [ 3, 4, 5, 6, 7 ] */
+
+
+/* // 2) find -> to find value in an array
+let newArr = arr.find(val => val > 2);
+console.log(newArr);    // 3 */
+
+
+/* // 3) map -> creates a NEW ARRAY by calling a function for each array element
+let newArr = arr.map(val => val * 2);
+console.log(newArr);     // [ 2, 4, 6, 8, 10, 12, 14 ]  */
+
+
+/* // 3) forEach -> calls a new function for each element in an array
+let newArr = arr.forEach(val => {
+    if (val > 3) {
+        console.log(val);   // [ 4, 5, 6, 7 ]
+    }
+}) */
