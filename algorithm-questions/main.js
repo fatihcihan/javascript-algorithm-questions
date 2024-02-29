@@ -15,9 +15,10 @@
 console.log(solution([8, 4, 6, 2, 3])); */
 
 
-// 2) input [[4,3,2,-1], [3,-2,-1,6], [5,-3,0,-1]]   ---> how many negative values
+// 2) input [[4,3,2,-1], [3,-2,-1,6], [5,-3,0,-1]]   ---> how many negative values (5)
 
 const solution = (arr) => {
+    // return arr.map(row => row.filter(r => r < 0).length).reduce((a, b) => a + b, 0);     
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
         for (let j = 0; j < arr[i].length; j++) {
@@ -29,4 +30,4 @@ const solution = (arr) => {
     return newArr.length;
 }
 
-console.log(solution([4, 3, 2, -1], [3, -2, -1, 6], [5, -4, 0, -1]));
+console.log(solution([[4, 3, 2, -1], [3, -2, -1, 6], [5, -4, 0, -1]]));
