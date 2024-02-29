@@ -42,7 +42,7 @@ console.log(solution([555, 901, 899, 1276, 12])); */
 
 // 4) input n = 5 --> make an array of n elements but let their sum be 0
 
-const solution = (num) => {
+/* const solution = (num) => {
     let newArr = [];
     if (num % 2 == 1) {
         newArr.push(0)
@@ -54,4 +54,13 @@ const solution = (num) => {
     return newArr;
 }
 
-console.log(solution(5));
+console.log(solution(5)); */
+
+// 5) n=434 ---> 4*3*4=48,   4+3+4=11  result = 48 - 11 = 37
+
+const solution = (num) => {
+    let reviseNum = num.toString().split('').map(Number);    // map(Number) --> converts each element in an array to a number
+    return reviseNum.reduce((a, b) => a * b, 1) - reviseNum.reduce((a, b) => a + b, 0)
+}
+
+console.log(solution(434));
