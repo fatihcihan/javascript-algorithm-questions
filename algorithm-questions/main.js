@@ -67,7 +67,7 @@ console.log(solution(434)); */
 
 // 6) nums = [1,2,3,4,4,3,2,1], n = 4   output -> [1,4,2,3,3,2,4,1] ---> put the value of nums four units behind
 
-const solution = (arr, num) => {
+/* const solution = (arr, num) => {
     let newArr = [];
     for (let i = 0; i < num; i++) {
         newArr.push(arr[i])
@@ -76,4 +76,13 @@ const solution = (arr, num) => {
     return newArr;
 }
 
-console.log(solution([1, 2, 3, 4, 4, 3, 2, 1], 4));
+console.log(solution([1, 2, 3, 4, 4, 3, 2, 1], 4)); */
+
+// 7) input -> [-2,1,-3,4,-1,2,1,-5,4] output -->  -4 [-2,1,-3,4,-1,2,-5] total -4 (delete duplicates)
+
+const solution = (arr) => {
+    let newArr = [...new Set(arr)]              // --> deleted repeating numbers (simple and useful)
+    return newArr.reduce((a, b) => a + b, 0)
+}
+
+console.log(solution([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
