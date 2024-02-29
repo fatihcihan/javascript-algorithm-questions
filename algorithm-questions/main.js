@@ -34,8 +34,24 @@ console.log(solution([[4, 3, 2, -1], [3, -2, -1, 6], [5, -4, 0, -1]])); */
 
 // 3) [555, 901, 899, 1276, 12] ---> how many double-digit numbers are there? (2)
 
-const solution = (arr) => {
+/* const solution = (arr) => {
     return arr.filter(r => r.toString().length % 2 == 0).length;
 }
 
-console.log(solution([555, 901, 899, 1276, 12]));
+console.log(solution([555, 901, 899, 1276, 12])); */
+
+// 4) input n = 5 --> make an array of n elements but let their sum be 0
+
+const solution = (num) => {
+    let newArr = [];
+    if (num % 2 == 1) {
+        newArr.push(0)
+    }
+    for (let i = 1; i < num / 2; i++) {
+        newArr.push(i);
+        newArr.unshift(-i);
+    }
+    return newArr;
+}
+
+console.log(solution(5));
