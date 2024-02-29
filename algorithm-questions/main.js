@@ -17,7 +17,7 @@ console.log(solution([8, 4, 6, 2, 3])); */
 
 // 2) input [[4,3,2,-1], [3,-2,-1,6], [5,-3,0,-1]]   ---> how many negative values (5)
 
-const solution = (arr) => {
+/* const solution = (arr) => {
     // return arr.map(row => row.filter(r => r < 0).length).reduce((a, b) => a + b, 0);     
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
@@ -30,4 +30,12 @@ const solution = (arr) => {
     return newArr.length;
 }
 
-console.log(solution([[4, 3, 2, -1], [3, -2, -1, 6], [5, -4, 0, -1]]));
+console.log(solution([[4, 3, 2, -1], [3, -2, -1, 6], [5, -4, 0, -1]])); */
+
+// 3) [555, 901, 899, 1276, 12] ---> how many double-digit numbers are there? (2)
+
+const solution = (arr) => {
+    return arr.filter(r => r.toString().length % 2 == 0).length;
+}
+
+console.log(solution([555, 901, 899, 1276, 12]));
