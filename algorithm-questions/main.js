@@ -58,9 +58,22 @@ console.log(solution(5)); */
 
 // 5) n=434 ---> 4*3*4=48,   4+3+4=11  result = 48 - 11 = 37
 
-const solution = (num) => {
+/* const solution = (num) => {
     let reviseNum = num.toString().split('').map(Number);    // map(Number) --> converts each element in an array to a number
     return reviseNum.reduce((a, b) => a * b, 1) - reviseNum.reduce((a, b) => a + b, 0)
 }
 
-console.log(solution(434));
+console.log(solution(434)); */
+
+// 6) nums = [1,2,3,4,4,3,2,1], n = 4   output -> [1,4,2,3,3,2,4,1] ---> put the value of nums four units behind
+
+const solution = (arr, num) => {
+    let newArr = [];
+    for (let i = 0; i < num; i++) {
+        newArr.push(arr[i])
+        newArr.push(arr[i + num])
+    }
+    return newArr;
+}
+
+console.log(solution([1, 2, 3, 4, 4, 3, 2, 1], 4));
